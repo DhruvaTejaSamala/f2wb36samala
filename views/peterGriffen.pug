@@ -1,0 +1,8 @@
+extends layout
+block content
+  h1= title
+  - let results = [{PeterIQ:70.00 , PeterFriend:"Cleveland", PeterChild: "Chris"},{PeterIQ:80.00 , PeterFriend:"Joe Swanson", PeterChild: "Meg"},{PeterIQ:90.00 , PeterFriend:"Quagmire", PeterChild: "Stewe"}]
+  div(class="container-fluid mt-3")
+  div(class="row")
+    each lol,index in results
+        div(class="col-sm-2")  #{lol.PeterIQ} -  #{lol.PeterFriend} - #{lol.PeterChild}
