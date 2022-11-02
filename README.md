@@ -7,7 +7,7 @@ class peterGriffen{
     double PeterIQ;
     String PeterFriend;
     String PeterChild;
-    public peterGriffen(double PeterIQ,String PeterFriend,String PeterChild)
+    constructor(PeterIQ, PeterFriend, PeterChild)
     {
         this.PeterIQ = PeterIQ;
         this.PeterFriend = PeterFriend;
