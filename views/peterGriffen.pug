@@ -2,15 +2,15 @@ extends layout
 block content
   h1= title
   - let results = [{PeterIQ:70.00 , PeterFriend:"Cleveland", PeterChild: "Chris"},{PeterIQ:80.00 , PeterFriend:"Joe Swanson", PeterChild: "Meg"},{PeterIQ:90.00 , PeterFriend:"Quagmire", PeterChild: "Stewe"}]
-  div(class="container-fluid mt-3" )
-  div(class="row")
+  .container-fluid.mt-3
+  .row
     each lol,index in results
-        div(class="col-sm-2" onclick = `buy(${index})`)  #{lol.PeterIQ} -  #{lol.PeterFriend} - #{lol.PeterChild}
+        .col-sm-2(onclick = `buy(${index})`)  #{lol.PeterIQ} -  #{lol.PeterFriend} - #{lol.PeterChild}
   br
-  div(class="container-fluid")
-    div(class="row")
+  .container-fluid
+    .row
     - for(var i=0;i<results.length;i++) {
-        div(class="col-sm-2" width="215px" onClick=`buy(${i+1})`) #{results[i].PeterIQ}
+        .col-sm-2(width="215px" onClick=`buy(${i+1})`) #{results[i].PeterIQ}
     -}
   script. 
     function buy(indexNum) {
