@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
-let rows;
-let cols;
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -9,6 +8,8 @@ router.get('/', function(req, res, next) {
   res.render('gridbuild', { title: 'Grid Build', query: query} );
   console.log(`rows ${query.rows}`)
   console.log(`cols ${query.cols}`)
+  rows=query.rows;
+  cols=query.cols;
 });
 
 module.exports = router;
