@@ -8,6 +8,7 @@ class peterGriffen{
     String PeterFriend;
     String PeterChild;
     public peterGriffen(double PeterIQ,String PeterFriend,String PeterChild)
+    {
         this.PeterIQ = PeterIQ;
         this.PeterFriend = PeterFriend;
         this.PeterChild = PeterChild;
