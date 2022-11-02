@@ -1,8 +1,9 @@
 # f2wb36samala
 Pandago
-[Hosted on Render Server at](https://f2wb36samala.onrender.com) 
+[Hosted on Render Server at](https://f2wb36samala.onrender.com) <br>
 
-public class peterGriffen{
+```
+class peterGriffen{
     double PeterIQ;
     String PeterFriend;
     String PeterChild;
@@ -11,5 +12,5 @@ public class peterGriffen{
         this.PeterFriend = PeterFriend;
         this.PeterChild = PeterChild;
     }
-
 }
+```
